@@ -94,7 +94,8 @@ export default function Home() {
           <p className="paragraph">Developer and web technology enthusiast.</p>
           <a
             className="button"
-            href="https://www.linkedin.com/in/diego-armando-contreras-a91070177/"
+            target="blank"
+            href="https://drive.google.com/file/d/1kO-i4YjS7QbKlIQ4pUjSZ1_YGTP0O5iT/view?usp=sharing"
           >
             Download Resume
           </a>
