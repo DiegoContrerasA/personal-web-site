@@ -4,21 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-body{
-  transition: all 1s ease-in-out;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 body[theme="dark-mode"] {
   --bg-color: #212429;
   --text-color: rgba(255, 255, 255, 0.541);
@@ -33,230 +18,22 @@ body[theme="ligth-mode"] {
   --line-color: #efefef;
 }
 
-.app {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  height: 100vh;
-  min-height: 100vh;
-  overflow: auto;
-  padding: 4em 2em;
-  position: relative;
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100%;
+    min-height: 100vh;
 }
 
-.buttons{
-  position: absolute;
-  right: 1em;
-  top: 1em;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.buttons > button{
-  border:none;
-  background: transparent;
-  display: inline-block;
-  padding: .5em;
-  border: 1px solid tomato;
-  outline: none;
-  transition: all .4s ease;
-  cursor: pointer;
-  box-shadow: 0 0 4px inset tomato, 0 0 2px  tomato;
-  line-height: 1;
-}
 
-.buttons > button > svg{
- fill: var(--text-color);
- width: 12px;
- height: 12px;
-}
-
-.buttons > button.selected > svg{
-  fill: white;
-}
-
-.buttons > button.selected{
-  background-color: tomato;
-}
-
-.buttons > button:first-child{
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-right: none;
-}
-
-.buttons > button:last-child{
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-left: none;
-}
-
-.container {
-  display: flex;
-  max-width: 1000px;
-  margin: auto;
-  height: 100%;
-  justify-content: space-between;
-}
-.introduction,
-.about-me {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-}
-
-.introduction {
-  align-items: center;
-  position: relative;
-}
-
-.introduction::before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 80%;
-  transform: translateY(10%);
-  background-color: var(--line-color);
-  position: absolute;
-  right: 0;
-}
-
-.picture {
-  width: 320px;
-  height: 320px;
-  min-height: 320px;
-  border-radius: 100%;
-  overflow: hidden;
-  margin-bottom: 2em;
-}
-
-.picture > img {
-  width: 100%;
-}
-
-.presentation {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.name {
-  color: var(--title-color);
-}
-
-.skills {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-.social-networks {
-  display: flex;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-evenly;
-  margin-bottom: 1.2em;
-}
-
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  border: 1px solid var(--text-color);
-  transition: all 0.5s ease-in-out;
-}
-
-.social-link.facebook:hover {
-  background-color: #1b77f2;
-  border-color: transparent;
-}
-.social-link.linkedin:hover {
-  background-color: #0c66c2;
-  border-color: transparent;
-}
-.social-link.twitter:hover {
-  background-color: #1fa1f1;
-  border-color: transparent;
-}
-.social-link.instagram:hover {
-  background-color: #7232bd;
-  border-color: transparent;
-}
-
-.social-link:hover > svg {
-  fill: rgba(255, 255, 255, 0.849);
-}
-
-.social-link > svg {
-  fill: var(--text-color);
-  width: 22px;
-  height: 22px;
-  transition: all 0.5s ease-in-out;
-}
-.paragraph {
-  font-size: 1.1em;
-  line-height: 1.5;
-  margin-bottom: 1.3em;
-}
-
-.title {
-  font-size: 2em;
-  margin-bottom: 0.6em;
-  color: var(--title-color);
-  position: relative;
-}
-
-.title:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 80px;
-  height: 3px;
-  background-color: tomato;
-  left: 0;
-  border-radius: 20px;
-  bottom: -5px;
-}
-
-.footer {
-  font-size: 0.7em;
-  text-align: center;
-}
-
-.button {
-  display: block;
-  padding: 0.3em 1.5em;
-  border-radius: 50px;
-  transition: all 0.5s ease-in-out;
-  margin-bottom: 20px;
-  background: tomato;
-  color: white;
-}
-
-.button:hover {
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.247);
-}
-
-.phrase {
-  color: tomato;
-}
-
-@media screen and (max-width: 800px) {
-  .app {
-    height: auto;
-  }
-  .container {
-    flex-wrap: wrap;
-  }
-  .about-me,
-  .introduction {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .introduction::before {
-    opacity: 0;
-  }
-}
 
 @media (prefers-color-scheme: dark) {
   body {
