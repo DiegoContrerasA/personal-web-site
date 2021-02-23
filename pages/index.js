@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import FacebookIcon from "../components/Svg/FacebookIcon"
-import InstagramIcon from "../components/Svg/InstagramIcon"
-import LinkedinIcon from "../components/Svg/LinkedinIcon"
-import TwitterIcon from "../components/Svg/TwitterIcon"
-import SunIcon from "../components/Svg/SunIcon"
-import MoonIcon from "../components/Svg/MoonIcon"
-import LaptopIcon from "../components/Svg/LaptopIcon"
+import FacebookIcon from "../components/Icons/FacebookIcon"
+import InstagramIcon from "../components/Icons/InstagramIcon"
+import LinkedinIcon from "../components/Icons/LinkedinIcon"
+import TwitterIcon from "../components/Icons/TwitterIcon"
+import SunIcon from "../components/Icons/SunIcon"
+import MoonIcon from "../components/Icons/MoonIcon"
+import LaptopIcon from "../components/Icons/LaptopIcon"
 import styles from "../styles/page.module.css"
 
 const year = new Date().getFullYear()
