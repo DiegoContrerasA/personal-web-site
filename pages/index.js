@@ -67,28 +67,28 @@ export default function Home() {
           </p>
           <div className={styles.socialNetworks}>
             <a
-              className={styles.socialLink}
+              className={`${styles.socialLink} ${styles.facebook}`}
               target="blank"
               href="https://www.facebook.com/diego.contreras.94801116/"
             >
               <FacebookIcon />
             </a>
             <a
-              className={styles.socialLink}
+              className={`${styles.socialLink} ${styles.instagram}`}
               target="blank"
               href="https://www.instagram.com/diegocondev/"
             >
               <InstagramIcon />
             </a>
             <a
-              className={styles.socialLink}
+              className={`${styles.socialLink} ${styles.twitter}`}
               target="blank"
               href="https://twitter.com/DiegoCo48990707"
             >
               <TwitterIcon />
             </a>
             <a
-              className={styles.socialLink}
+              className={`${styles.socialLink} ${styles.linkedin}`}
               target="blank"
               href="https://www.linkedin.com/in/diego-armando-contreras-a91070177/"
             >
