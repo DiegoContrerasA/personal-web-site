@@ -1,0 +1,85 @@
+.skillContainer{
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+justify-content: space-around;
+align-items: center;
+}
+
+.skillContainer > div {
+    min-width: 80px;
+}
+
+@media screen and (min-width: 980px) {
+    .skillContainer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .skillContainer > div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        flex-direction: row;
+    }
+    .skillContainer > div:nth-child(2){
+        left: 0;
+        top: 16%;
+    }
+
+    .skillContainer > div:nth-child(3){
+        left: 0;
+        top: 32%;
+    }
+
+    .skillContainer > div:nth-child(4){
+        left: 0;
+        top: 48%;
+    }
+
+    .skillContainer > div:nth-child(5){
+        left: 0;
+        top: 64%;
+    }
+
+    .skillContainer > div:nth-child(6){
+        left: 0;
+        top: 80%;
+    }
+
+    .skillContainer > div:nth-child(7){
+        left: 0;
+        top: 96%;
+    }
+
+    .skillContainer > div:nth-child(8){
+        left: 0;
+        top: 100%;
+    }
+
+    .skillContainer > div:nth-child(9){
+        left: 100px;
+        top: 14%;
+    }
+
+    .skillContainer > div:nth-child(10){
+        left: 100px;
+        top: 28%;
+    }
+
+    .skillContainer > div:nth-child(11){
+        left: 100px;
+        top: 42%;
+    }
+
+    .skillContainer > div:nth-child(12){
+        left: 100px;
+        top: 56%;
+    }
+
+    .skillContainer > div:nth-child(13){
+        left: 100px;
+        top: 70%;
+    }
+}

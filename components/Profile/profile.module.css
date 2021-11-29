@@ -1,0 +1,165 @@
+.container {
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  min-height: 250px;
+  background-image: url("../../public/profile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.skill {
+  position: absolute;
+  background-color: var(--button);
+  left: 10px;
+  top: 30px;
+  padding: 2px 15px;
+  border-radius: 5px;
+  line-height: 1.5;
+  font-size: 0.78rem;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+  font-weight: bold;
+  animation-name: float;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.skill:nth-child(1) {
+  left: 65px;
+  top: 110px;
+}
+
+.skill:nth-child(2) {
+  left: 0px;
+  top: 10px;
+}
+
+.skill:nth-child(3) {
+  left: 110px;
+  top: -38px;
+}
+
+.skill:nth-child(4) {
+  left: 0px;
+    top: 85px;
+}
+
+.skill:nth-child(5) {
+  top: 60px;
+  left: inherit;
+  right: 0;
+}
+
+.skill:nth-child(6) {
+  left: 50px;
+    top: 45px;
+}
+
+.skill:nth-child(7) {
+  left: inherit;
+  top: -10px;
+  right: 5px;
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    min-height: 350px;
+  }
+
+  .skill {
+    display: inline;
+  }
+
+  .skill:nth-child(1) {
+    left: 65px;
+    top: 160px;
+  }
+
+  .skill:nth-child(2) {
+    left: 70px;
+    top: 10px;
+  }
+
+  .skill:nth-child(3) {
+    left: 180px;
+    top: -30px;
+  }
+
+  .skill:nth-child(4) {
+    left: 10px;
+    top: 100px;
+  }
+
+  .skill:nth-child(5) {
+    top: 60px;
+    left: inherit;
+    right: 20px;
+  }
+
+  .skill:nth-child(6) {
+    left: 105px;
+    top: 70px;
+  }
+
+  .skill:nth-child(7) {
+    left: inherit;
+    top: -10px;
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .skill:nth-child(1) {
+    left: 65px;
+    top: 160px;
+  }
+
+  .skill:nth-child(2) {
+    left: 70px;
+    top: 10px;
+  }
+
+  .skill:nth-child(3) {
+    left: 180px;
+    top: -30px;
+  }
+
+  .skill:nth-child(4) {
+    left: 10px;
+    top: 100px;
+  }
+
+  .skill:nth-child(5) {
+    top: 60px;
+    left: inherit;
+    right: 40px;
+  }
+
+  .skill:nth-child(6) {
+    left: 130px;
+    top: 70px;
+  }
+
+  .skill:nth-child(7) {
+    left: inherit;
+    top: -25px;
+    right: 80px;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-2px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

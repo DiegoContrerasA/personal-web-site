@@ -1,0 +1,57 @@
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-block: 60px;
+}
+
+.profile {
+  flex: 1 1 100%;
+  margin-block-end: 20px;
+  position: relative;
+}
+
+.information {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.information h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.information h2 {
+  text-align: center;
+  margin-block-end: 20px;
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile {
+    min-width: 450px;
+    order: 2;
+    margin-block-end: 0;
+  }
+
+  .information {
+    flex: 1 1 100%;
+    padding-inline-end: 30px;
+  }
+
+  .information h1 {
+    text-align: left;
+  }
+
+  .information h2 {
+    text-align: left;
+  }
+}
