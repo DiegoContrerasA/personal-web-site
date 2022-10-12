@@ -22,7 +22,6 @@ const LINKS = [
     path: 'https://www.linkedin.com/in/diego-armando-contreras-a91070177/',
     icon: LinkedinIcon
   }
-
 ]
 
 const SocialNetworks = () => {

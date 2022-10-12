@@ -36,11 +36,9 @@ html {
 
 body {
   background: var(--bgColor);
-  background: linear-gradient(
-    152deg,
-    var(--bgColor) 0%,
-    var(--button) 100%
-  );
+  background: linear-gradient(152deg,
+      var(--bgColor) 0%,
+      var(--button) 100%);
   font-family: Nunito;
   color: var(--text);
 }
